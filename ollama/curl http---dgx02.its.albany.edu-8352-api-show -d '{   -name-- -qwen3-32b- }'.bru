@@ -1,0 +1,20 @@
+meta {
+  name: curl http://dgx02.its.albany.edu:8352/api/show -d '{   "name": "qwen3:32b" }'
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://dgx02.its.albany.edu:8352/api/show?name=qwen
+  body: none
+  auth: inherit
+}
+
+params:query {
+  name: qwen
+}
+
+settings {
+  encodeUrl: false
+  timeout: 0
+}

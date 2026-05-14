@@ -1,0 +1,21 @@
+meta {
+  name: http://dgx02.its.albany.edu:8352/api/show -d '{   "name": "qwen3:32b" }'
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://dgx02.its.albany.edu:8352/api/show
+  body: formUrlEncoded
+  auth: inherit
+}
+
+body:form-urlencoded {
+  "{
+    \"name\": \"qwen3:32b\"
+  }": 
+}
+
+settings {
+  encodeUrl: false
+}
