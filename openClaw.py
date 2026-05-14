@@ -304,6 +304,17 @@ def run_local_and_open_browser(command, username=None, password=None):
         client.close()
 
 def main():
+
+    disclaimer = """
+    Disclaimer: It is a very bad idea to run unsigned executables, 
+    and especially to enter your credentials into them. These 
+    instructions describe an extremely temporary workflow written 
+    specifically for this workshop. The executable will not function 
+    after the workshop ends and should be deleted immediately 
+    thereafter. 
+    A more stable workflow (and relevant documentation) is currently being developed."""
+    input(f"{disclaimer}\n\nPress Enter to acknowledge and continue...\n")
+    
     username = os.getenv('username')
     password = os.getenv('password')
     folder = os.getenv('folder')
